@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-yy(%s$(!b3crv4&urgfzf)t%)j#^m$_&fx16+^#vtx9nx_=asq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['proj1-sqlite3.herokuapp.com']
+ALLOWED_HOSTS = ['*','proj1-sqlite3.herokuapp.com']
 
 
 # Application definition
@@ -128,9 +128,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-DISABLE_COLLECTSTATIC = 1
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# DISABLE_COLLECTSTATIC = 1
+# :application --log-file-
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
